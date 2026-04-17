@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+SELECT WAREHOUSE_ID, WAREHOUSE_NAME, ADDRESS, nvl(FREEZER_YN, 'N')
+from FOOD_WAREHOUSE
+where 1=1
+and WAREHOUSE_NAME like '%경기%'
+order by WAREHOUSE_ID
+;
